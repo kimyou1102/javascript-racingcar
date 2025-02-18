@@ -3,3 +3,7 @@ export const CAR = Object.freeze({
   NAME_LENGTH_MAX: 5,
   PROGRESS_CRITERIA: 4,
 });
+
+export const TRY_COUNT = Object.freeze({
+  MIN: 1,
+});

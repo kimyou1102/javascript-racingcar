@@ -1,5 +1,5 @@
 import { createError } from "../error/createError.js";
-import { CAR } from "./constants/car.js";
+import { CAR, TRY_COUNT } from "./constants/car.js";
 import { ERROR_MESSAGE } from "../constants/message.js";
 
 export default class Race {
@@ -19,7 +19,7 @@ export default class Race {
     if (isNaN(Number(this.#tryCount))) {
       createError(ERROR_MESSAGE.INVALID_TRY_COUNT);
     }
-    if (this.#tryCount < 1) {
+    if (this.#tryCount < TRY_COUNT.MIN) {
       createError(ERROR_MESSAGE.INVALID_TRY_COUNT);
     }
   }
