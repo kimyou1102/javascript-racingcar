@@ -42,7 +42,6 @@ export default class Race {
   }
 
   isMove(number) {
-    if (number >= CAR.PROGRESS_CRITERIA) return true;
-    return false;
+    return number >= CAR.PROGRESS_CRITERIA;
   }
 }
