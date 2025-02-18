@@ -1,4 +1,4 @@
-import { OUTPUT_MESSAGE } from "../constants/message.js";
+import { OUTPUT_MESSAGE } from "./constants/message";
 
 export default class OutputView {
   printExecutionResult(results) {
