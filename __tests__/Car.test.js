@@ -3,9 +3,11 @@ import Car from "../src/domain/Car.js";
 describe("자동차 모델 테스트", () => {
   test("자동차는 이름이랑 현재위치 정도를 가질 수 있다.", () => {
     const NAME = "데이지";
-    const car = new Car(NAME);
+    const POSITION = 1;
+    const car = new Car(NAME, POSITION);
 
     expect(car.getName()).toBe(NAME);
+    expect(car.getPosition()).toBe(POSITION);
   });
 
   test.each([[""], ["가나다라마바"]])(
