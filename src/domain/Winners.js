@@ -11,7 +11,7 @@ export default class Winners {
   }
 
   validateCars() {
-    if (Array.isArray(this.#cars)) {
+    if (!Array.isArray(this.#cars)) {
       createError(ERROR_MESSAGE.NOT_ARRAY);
     }
     this.#cars.forEach((car) => {
