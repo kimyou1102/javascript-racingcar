@@ -3,14 +3,14 @@ import Car from "../src/domain/Car.js";
 
 describe("자동차 경주 한 라운드 테스트", () => {
   test.each([[0], [-2], ["문자"]])(
-    "잘못된 시도 횟수로 경주 객체를 생성할 경우 오류가 발생한다.",
+    "1미만 숫자가 아닌 시도 횟수로 경주 객체를 생성할 경우 오류가 발생한다.",
     (tryCount) => {
       const CARS = [new Car("머핀")];
 
       expect(() => new Race(CARS, tryCount)).toThrow("[ERROR]");
     }
   );
-  test("올바른 시도 횟수로 경주 객체를 생성할 경우 오류가 발생하지 않는다.", () => {
+  test("1이상의 숫자인 시도 횟수로 경주 객체를 생성할 경우 오류가 발생하지 않는다.", () => {
     const CARS = [new Car("머핀")];
     const TRY_COUNT = 1;
 
