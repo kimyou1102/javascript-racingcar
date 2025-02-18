@@ -1,6 +1,6 @@
 import { createError } from "../error/createError.js";
 import { CAR, TRY_COUNT } from "./constants/car.js";
-import { ERROR_MESSAGE } from "../constants/message.js";
+import { ERROR_MESSAGE } from "../error/message.js";
 
 export default class Race {
   #cars;
