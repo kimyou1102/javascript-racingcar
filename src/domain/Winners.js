@@ -7,7 +7,7 @@ export default class Winners {
   constructor(cars) {
     this.#cars = cars;
 
-    validateCars();
+    this.validateCars();
   }
 
   validateCars() {
