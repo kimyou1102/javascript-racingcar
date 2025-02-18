@@ -1,6 +1,6 @@
 import { createError } from "../utils/createError.js";
 import { ERROR_MESSAGE } from "../constants/message.js";
-import { CAR } from "../constants/constants.js";
+import { CAR } from "./constants/car.js";
 
 export default class Car {
   #name;

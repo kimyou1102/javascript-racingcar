@@ -1,5 +1,5 @@
 import { createError } from "../utils/createError.js";
-import { CAR } from "../constants/constants.js";
+import { CAR } from "./constants/car.js";
 import { ERROR_MESSAGE } from "../constants/message.js";
 
 export default class Race {
