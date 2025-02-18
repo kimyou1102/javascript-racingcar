@@ -1,4 +1,4 @@
-import { createError } from "../utils/createError.js";
+import { createError } from "../error/createError.js";
 import { ERROR_MESSAGE } from "../constants/message.js";
 import { CAR } from "./constants/car.js";
 

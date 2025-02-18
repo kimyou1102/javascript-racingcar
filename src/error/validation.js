@@ -1,5 +1,5 @@
 import { createError } from "./createError.js";
-import { ERROR_MESSAGE } from "../constants/message.js";
+import { ERROR_MESSAGE } from "./message.js";
 
 export const validateCarNames = (input) => {
   if (input === "") createError(ERROR_MESSAGE.EMPTY_INPUT);

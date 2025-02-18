@@ -1,4 +1,4 @@
-import { validateCarNames } from "../src/utils/validation.js";
+import { validateCarNames } from "../src/error/validation.js";
 
 describe("예외 테스트", () => {
   test.each(["", "01", "자동차.", "데이지,머핀,데이지"])(

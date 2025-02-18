@@ -3,7 +3,7 @@ import Car from "../domain/Car.js";
 import Race from "../domain/Race.js";
 import Winners from "../domain/Winners.js";
 import OutputView from "../view/OutputView.js";
-import { validateCarNames } from "../utils/validation.js";
+import { validateCarNames } from "../error/validation.js";
 import { getRandomNumber } from "../utils/getRandomNumber.js";
 import { INPUT_MESSAGE } from "./constants/message.js";
 
